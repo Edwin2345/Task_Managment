@@ -52,6 +52,8 @@ public class TodoServiceImpl implements TodoService {
         List<TodoDto> foundTodos =  foundUser.getAssignedTodos().stream().map( (todo) -> TodoMapper.mapToTodoDto(todo) )
                 .collect(Collectors.toList());
 
+        Collections.sort( foundTodos, ((o1, o2) -> Math.toIntExact(o1.getId() - o2.getId())));
+        
         return foundTodos;
     }
 
