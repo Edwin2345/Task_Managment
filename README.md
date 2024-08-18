@@ -1,4 +1,4 @@
-# Task_Managment
+# Task Managment
 An application made with the Java spring framework, typescript, bootstrap to manage team tasks. <br/>
 Features role based authorization allowing for admins to assign tasks to users to complete
 
